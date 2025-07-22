@@ -1,0 +1,92 @@
+/*
+Theme Name: SanchezDV
+Author: Axel Sanchez
+Description: Mi pagina web
+Version: 1.0
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: Orbitron;
+    src: url(/wp-content/themes/SanchezDv/assets/fuentestx/Orbitron/Orbitron-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/wp-content/themes/SanchezDv/assets/fuentestx/Poppins/Poppins-Light.ttf);
+}
+
+:root {
+    --color-primario: #000000;
+    --color-segundario: #ffffff;
+    --color-terciario: #7900ca;
+    --color-terciario-hover: #923ef1;
+}
+
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: var(--color-primario);
+    padding: 2em;
+}
+
+.navBar ul {
+    list-style: none;
+}
+
+.navBar li {
+    margin-right: 5em;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s all;
+}
+
+.navBar a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--color-segundario);
+    transition: 0.5s all;
+    font-family: Poppins;
+}
+
+.navBar a:hover {
+    color: var(--color-terciario);
+}
+
+.navBar li:hover {
+    border-bottom: 2px solid var(--color-terciario);
+    transform: scale(1.3);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: row;
+    color: var(--color-segundario);
+    width: 70%;
+
+}
+
+.nav-left li {
+    text-transform: capitalize;
+    font-size: 2em;
+    letter-spacing: 2px;
+
+}
+
+.title-nav {
+    color: white;
+    font-size: 160px;
+    font-weight: bold;
+    overflow: hidden;
+    position: relative;
+    text-transform: uppercase;
+    animation: 4s ease infinite reverse glow;
+    font-family: Orbitron;
+
+}
