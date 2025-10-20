@@ -10,37 +10,64 @@ Version: 1.0
     margin: 0;
 }
 
+body {
+    background-color: var(--color-primario);
+}
+
 @font-face {
     font-family: Orbitron;
     src: url(/wp-content/themes/SanchezDv/assets/fuentestx/Orbitron/Orbitron-VariableFont_wght.ttf);
 }
+
 @font-face {
     font-family: Poppins;
     src: url(/wp-content/themes/SanchezDv/assets/fuentestx/Poppins/Poppins-Light.ttf);
 }
 
 :root {
-    --color-primario: #000000;
-    --color-segundario: #ffffff;
-    --color-terciario: #7900ca;
-    --color-terciario-hover: #923ef1;
+    --color-primario: hsl(0 0% 5%);
+    --color-segundario: #d98e04;
+    --color-terciario: white;
+    --color-terciario-hover: #fba505;
 }
 
 .navBar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1000;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: space-around;
-    flex-direction: row;
-    background-color: var(--color-primario);
-    padding: 2em;
+    background-color: var(--color-segundario);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+
 }
+.cartas{
+    height: 100vh;
+}
+
+/* Ahora el estilo .scrolled va en .nav, no en .nav-list */
+.navBar.scrolled {
+    margin: 10px 200px;
+    width: 80%;
+    height: 60px;
+    border-radius: 16px;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--color-fondo);
+    
+}
+
+
 
 .navBar ul {
     list-style: none;
 }
 
 .navBar li {
-    margin-right: 5em;
+    margin-right: 2em;
     border-bottom: 2px solid transparent;
     transition: 0.5s all;
 }
@@ -48,17 +75,20 @@ Version: 1.0
 .navBar a {
     text-transform: capitalize;
     text-decoration: none;
-    color: var(--color-segundario);
+    font-size: 18px;
+    color: var(--color-terciario);
     transition: 0.5s all;
     font-family: Poppins;
 }
 
 .navBar a:hover {
-    color: var(--color-terciario);
+    padding: 4px;
+    border-radius: 20px;
+    background-color: var(--color-terciario);
+    color: var(--color-terciario-hover);
 }
 
 .navBar li:hover {
-    border-bottom: 2px solid var(--color-terciario);
     transform: scale(1.3);
 }
 
@@ -69,6 +99,7 @@ Version: 1.0
     flex-direction: row;
     color: var(--color-segundario);
     width: 70%;
+    padding-top: 1em;
 
 }
 
@@ -89,4 +120,25 @@ Version: 1.0
     animation: 4s ease infinite reverse glow;
     font-family: Orbitron;
 
+}
+
+.title-nav img {
+    height: 90px;
+}
+
+.footer {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: (var(--color-segundario));
+}
+
+.conte-footer {
+    height: 30em;
+    width: 80%;
+    margin-top: 2em;
+    border-radius: 70px 70px 0 0;
+    background-color: var(--color-segundario);
 }
