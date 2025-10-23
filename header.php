@@ -10,19 +10,23 @@
         <nav class="navBar">
             <ul class="nav-left">
                 <li class="title-nav">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/Copilot_20251014_235219.png" alt="Foto-logo">
+                    <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/img/Copilot_20251014_235219.png" alt="Foto-logo"></a>
                 </li>
             </ul>
-            <ul>
-                <li><a href="">sobre mi</a></li>
-            </ul>
-            <ul>
-                <li><a href=""> porfolio</a></li>
-            </ul>
-            <ul>
-                <li><a href="">codigos y capturas</a></li>
-            </ul>
+            <nav class="nav-right">
+                <ul>
+                    <li><a href="<?php echo site_url('/sobre-mi'); ?>">sobre mi</a></li>
+                </ul>
+                <ul>
+                    <li><a href=""> porfolio</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">codigos y capturas</a></li>
+                </ul>
+            </nav>
+
         </nav>
+
     </header>
 
 </head>
