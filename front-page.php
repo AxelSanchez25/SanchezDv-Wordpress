@@ -10,14 +10,14 @@
                 <a>Disponible para trabajar</a>
                 <div class="portada-iconos">
                     <div>
-                        <a href="">
-                            <img src="/wp-content/themes/SanchezDv/iconos/instagram (1).png" alt="" class="iconos">
+                        <a href="https://www.instagram.com/sanchez_axel7?igsh=MWtjbnV5dXR3YnpkZQ%3D%3D&utm_source=qr" target="_blank">
+                            <img src="/wp-content/themes/SanchezDv/iconos/instagram (1).png" alt="IconosInstagram" class="iconos">
                         </a>
-                        <a href="">
-                            <img src="/wp-content/themes/SanchezDv/iconos/github.png" alt="" class="iconos"> </a>
+                        <a href="https://github.com/AxelSanchez25" target="_blank">
+                            <img src="/wp-content/themes/SanchezDv/iconos/github.png" alt="IconosGithub" class="iconos"> </a>
                     </div>
                     <div>
-                        <a href="" class="botones">Conóceme mejor</a>
+                        <a href="<?php echo site_url('/sobre-mi'); ?>" class="botones">Conóceme mejor</a>
                         <a href="" class="botones">cv</a>
                     </div>
                 </div>
@@ -26,6 +26,9 @@
                 <video autoplay muted loop playsinline>
                     <source src="/wp-content/themes/SanchezDv/avatar/avatar.webm" type="video/webm">
                 </video>
+            </div>
+            <div class="portada-anime">
+                <a href="#Proyectos" class="scroll-down">↓</a>
             </div>
 
         </div>
@@ -52,7 +55,52 @@
 
         </div>
     </section>
-    <section class="cartas">
+
+    <section class="Proyectos" id="Proyectos">
+        <!-- Imagen fija inicial -->
+        <article class="hero-section expanded">
+            <div class="hero-background">
+                <img src="/wp-content/themes/SanchezDv/img/JoseCarlos.png" alt="JoseCarlosHerrera">
+            </div>
+            <div class="hero-proyectos">
+                <h1>producción</h1>
+            </div>
+            <div class="hero-overlay">
+                <h1>jose carlos herrera</h1>
+                <p> web realizada con WordPress, HTML y CSS. Integré la estructura de la Front Page, diseñé un slider animado para comentarios con desplazamiento en hover,
+                    desarrollé la barra de navegación personalizada y dos cartas enlazadas a cursos. También implementé la portada con reproducción
+                    automática de video y un botón de control de sonido. Además, construí una galería de imágenes con estilo de costura, optimizada para resaltar detalles visuales de prendas y procesos creativos.</p>
+                <a href="https://josecarlosherrera.com/" class="botones" target="_blank">mostrar</a>
+            </div>
+        </article>
+
+        <!-- Carrusel de miniaturas -->
+        <div class="hero-carousel">
+            <img src="/wp-content/themes/SanchezDv/img/JoseCarlos.png" class="trigger" data-index="0" alt="JoseCarlosHerrera">
+            <img src="/wp-content/themes/SanchezDv/img/Susanitaurban.png" class="trigger" data-index="1" alt="SusanitaUrban">
+
+        </div>
+        <article class="tecnologias">
+            <div class="slider-container">
+                <div class="slider-track">
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/php (1).png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/js.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/github.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/wordpress.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/visual-basic.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/trello.png" alt=""></div>
+                    <!-- Clones para efecto infinito -->
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/php (1).png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/js.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/github.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/wordpress.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/visual-basic.png" alt=""></div>
+                    <div class="slide"><img src="/wp-content/themes/SanchezDv/iconos/trello.png" alt=""></div>
+                </div>
+            </div>
+        </article>
+    </section>
+    <section class="cartas" >
 
         <article class="cartas-contenido">
             <div class="contenedor-cartas">
@@ -76,33 +124,13 @@
             </div>
         </article>
     </section>
-    <section class="Proyectos">
-        <!-- Imagen fija inicial -->
-        <article class="hero-section expanded">
-            <div class="hero-background">
-                <img src="/wp-content/themes/SanchezDv/img/JoseCarlos.png" alt="JoseCarlosHerrera">
-            </div>
-            <div class="hero-overlay">
-                <h1>jose carlos herrera</h1>
-                <p> web realizada con WordPress, HTML y CSS. Integré la estructura de la Front Page, diseñé un slider animado para comentarios con desplazamiento en hover,
-                    desarrollé la barra de navegación personalizada y dos cartas enlazadas a cursos. También implementé la portada con reproducción
-                    automática de video y un botón de control de sonido. Además, construí una galería de imágenes con estilo de costura, optimizada para resaltar detalles visuales de prendas y procesos creativos.</p>
-                <a href="https://josecarlosherrera.com/" class="botones" target="_blank">mostrar</a>
-            </div>
-        </article>
-
-        <!-- Carrusel de miniaturas -->
-        <div class="hero-carousel">
-            <img src="/wp-content/themes/SanchezDv/img/JoseCarlos.png" class="trigger" data-index="0" alt="JoseCarlosHerrera">
-            <img src="/wp-content/themes/SanchezDv/img/Susanitaurban.png" class="trigger" data-index="1" alt="SusanitaUrban">
-
-        </div>
-    </section>
-    <section class="Tecnologias-blog">
-        <article class="tecnologias">
-
-        </article>
+    <section class="section-blog">
         <article class="blog">
+            <div class="blog-contenido">
+                <div class="cartas-blog">
+
+                </div>
+            </div>
 
         </article>
 

@@ -14,14 +14,17 @@
                 </li>
             </ul>
             <nav class="nav-right">
+                 <ul>
+                    <li><a href="<?php echo home_url(); ?>">inicio</a></li>
+                </ul>
                 <ul>
                     <li><a href="<?php echo site_url('/sobre-mi'); ?>">sobre mi</a></li>
                 </ul>
                 <ul>
-                    <li><a href=""> porfolio</a></li>
+                    <li><a href=""> proyectos</a></li>
                 </ul>
                 <ul>
-                    <li><a href="">codigos y capturas</a></li>
+                    <li><a href="/codigos-y-capturas/">codigos y capturas</a></li>
                 </ul>
             </nav>
 

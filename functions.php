@@ -10,6 +10,18 @@ function axel_custom_scripts() {
 }
 add_action('wp_enqueue_scripts', 'axel_custom_scripts');
 
+function axel_home_scripts() {
+  if (is_front_page()) {
+    wp_enqueue_script(
+      'reproductor-home',
+      get_template_directory_uri() . '/js/reproductor-home.js',
+      array(),
+      null,
+      true
+    );
+  }
+}
+add_action('wp_enqueue_scripts', 'axel_home_scripts');
 
 
 
