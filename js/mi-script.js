@@ -15,7 +15,7 @@ if (scrollButton) {
     scrollButton.addEventListener('click', function (e) {
         e.preventDefault(); // Evita el salto brusco
 
-        const target = document.querySelector('#Proyectos');
+        const target = document.querySelector('#cartas');
         if (target) {
             target.scrollIntoView({
                 behavior: 'smooth',
@@ -32,13 +32,13 @@ const data = [
     {
         img: "/wp-content/themes/SanchezDv/img/JoseCarlos.png",
         title: "jose carlos herrera",
-        text: "web realizada con WordPress, HTML y CSS. Integré la estructura de la Front Page...",
+        text: "web realizada con WordPress, HTML y CSS. Integré la estructura de la Front Page, diseñé un slider animado para comentarios con desplazamiento en hover,desarrollé la barra de navegación personalizada y dos cartas enlazadas a cursos. También implementé la portada con reproducción automática de video y un botón de control de sonido. Además, construí una galería de imágenes con estilo de costura, optimizada para resaltar detalles visuales de prendas y procesos creativos",
         link: "https://josecarlosherrera.com/"
     },
     {
         img: "/wp-content/themes/SanchezDv/img/Susanitaurban.png",
         title: "susanita urban",
-        text: "La web de Susanita Urban se desarrolló con un tema personalizado en WordPress...",
+        text: "La web de Susanita Urban se desarrolló con un tema personalizado en WordPress, utilizando WooCommerce para integrar funcionalidades de tienda online. Aunque no participé directamente en su construcción, estudié su estructura y enfoque para comprender la implementación de comercio electrónico en entornos WordPress.",
         link: "https://susanitaurban.com/"
     }
 ];
@@ -164,3 +164,37 @@ if (track) {
 }
 
 
+
+/* preguntas frecuentes */
+const faqItems = document.querySelectorAll('.faq-item');
+
+faqItems.forEach(item => {
+    const button = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    const icon = item.querySelector('.faq-icon');
+
+    button.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+
+        // Cierra todos los demás sin animación
+        faqItems.forEach(i => {
+            if (i !== item) {
+                i.classList.remove('active');
+                const otherIcon = i.querySelector('.faq-icon');
+                if (otherIcon) otherIcon.textContent = '+';
+            }
+        });
+
+        // Abre el actual con animación
+        if (!isActive) {
+            item.classList.add('active');
+            if (icon) icon.textContent = '−';
+        } else {
+            item.classList.remove('active');
+            if (icon) icon.textContent = '+';
+        }
+    });
+});
+
+
+/* termina aca preguntas frecuentes */

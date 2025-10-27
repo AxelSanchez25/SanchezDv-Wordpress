@@ -9,6 +9,7 @@ Version: 1.0
     padding: 0;
     margin: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -392,7 +393,7 @@ body {
 
 .slideSobremi img {
     height: 140px;
-    border-radius: 5px 5px 5px 5px ;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .slideSobremi:hover {
@@ -467,16 +468,88 @@ body {
 
 /* aca termina musica */
 
-/* acá empieza cartas1 */
-.cartas-contenido {
+
+
+/* cartas contenido */
+.cartas-servicio-contenido {
     height: 95%;
     width: 95%;
     background-color: var(--color-terciario);
     border-radius: 20px 20px 20px 20px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
+.cartas-sc {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2em;
+}
+
+.carta-servicios {
+    height: 10em;
+    width: 10em;
+    background-color: var(--color-segundario);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+    --shadowColor: 187 60% 40%;
+    border: 0.5rem solid;
+    padding: 2em;
+    transition: all 1s;
+    color: radial-gradient(circle at center, #0f0f1a, #050510);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.carta-servicios img {
+    height: 70px;
+}
+
+.carta-servicios h2 {
+    font-family: Poppins;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+
+
+.carta-servicios:hover {
+    transform: translateY(-5px);
+}
+
+.cartas-titulo {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5em;
+}
+
+.cartas-titulo h1 {
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-size: 50px;
+    text-align: center;
+    color: var(--color-segundario);
+    margin-bottom: 1em;
+}
+
+.cartas-titulo p {
+    font-family: Poppins;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    width: 40em;
+
+}
+
+/* aca termina cartas contenido */
+/* acá empieza cartas1 */
 
 .contenedor-cartas {
     display: flex;
@@ -647,7 +720,7 @@ body {
     position: absolute;
     z-index: 1000;
     margin-left: 70%;
-    top: 83em;
+    top: 141em;
 }
 
 
@@ -752,6 +825,114 @@ body {
 
 /* sliderinfinito termina acá */
 
+/* preguntas frecuentes */
+
+.preguntas-frecuentes {
+    height: 130vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preguntas-f {
+    height: 95%;
+    width: 95%;
+    background-color: var(--color-terciario);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px 20px 20px 20px;
+}
+
+
+.faq-section h2 {
+    font-family: Poppins;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: uppercase;
+    color: var(--color-segundario);
+    margin-bottom: 1em;
+}
+
+.faq-item {
+    max-width: 40em;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: 0.5rem solid #000000;
+    border-radius: 20px 20px 20px 20px;
+    background-color: var(--color-segundario);
+    box-shadow: 0.65rem 0.65rem 0 hsl(var(--shadowColor) / 1);
+    --shadowColor: 187 60% 40%;
+}
+
+.faq-question {
+    background: none;
+    border: none;
+    color: var(--color-terciario);
+    font-size: 1.1rem;
+    text-align: left;
+    width: 95%;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-family: Poppinsbold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transition: color 0.3s;
+}
+
+.faq-question:hover {
+    color: white;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    font-family: Poppins;
+    font-weight: 400;
+    color: white;
+    text-transform: capitalize;
+    padding-left: 1em;
+    transition: max-height 0.4s ease;
+}
+
+
+.faq-icon {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px;
+    /* suficientemente alto para cualquier contenido */
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(359deg);
+    /* cambia + a × visualmente */
+}
+
+/* termina aca preguntas frecuentes */
+
+/* cartas entradas */
+.cartas-entradas{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+}
+/* cartas entradas final */
 
 /* blog comienza acá*/
 .blog {

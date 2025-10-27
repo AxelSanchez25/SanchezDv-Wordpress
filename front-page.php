@@ -28,7 +28,7 @@
                 </video>
             </div>
             <div class="portada-anime">
-                <a href="#Proyectos" class="scroll-down">↓</a>
+                <a href="#cartas" class="scroll-down">↓</a>
             </div>
 
         </div>
@@ -55,8 +55,45 @@
 
         </div>
     </section>
+    <section class="cartas" id="cartas">
 
-    <section class="Proyectos" id="Proyectos">
+        <article class="cartas-servicio-contenido">
+            <div class="cartas-titulo">
+                <h1>Diseño páginas web personalizadas para marcas, emprendedores y creativos</h1>
+                <p>“Cada web que diseño es una experiencia única. Trabajo contigo desde la idea hasta la ejecución,
+                    combinando narrativa visual, estructura modular y precisión técnica para que tu proyecto no solo se vea bien, sino que funcione”</p>
+            </div>
+            <div class="cartas-sc">
+                <div class="carta-servicios">
+                    <img src="/wp-content/themes/SanchezDv/iconos/diseno.png" alt="">
+                    <h2>Diseño web personalizado (WordPress, HTML/CSS/JS)</h2>
+                </div>
+                <div class="carta-servicios">
+                    <img src="/wp-content/themes/SanchezDv/iconos/cerebro.png" alt="">
+                    <h2>UI/UX con enfoque narrativo y emocional</h2>
+                </div>
+                <div class="carta-servicios">
+                    <img src="/wp-content/themes/SanchezDv/iconos/animar.png" alt="">
+                    <h2>Integración de video, audio y animaciones</h2>
+                </div>
+                <div class="carta-servicios">
+                    <img src="/wp-content/themes/SanchezDv/iconos/ingenieria.png" alt="">
+                    <h2>Automatización y estructura modular</h2>
+                </div>
+                <div class="carta-servicios">
+                    <img src="/wp-content/themes/SanchezDv/iconos/optimizacion-movil.png" alt="">
+                    <h2>Optimización para móviles y velocidad</h2>
+                </div>
+                <div class="carta-servicios">
+                    <img src="/wp-content/themes/SanchezDv/iconos/verificado.png" alt="">
+                    <h2>Buenas prácticas de seguridad y control</h2>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+    <section class="Proyectos">
         <!-- Imagen fija inicial -->
         <article class="hero-section expanded">
             <div class="hero-background">
@@ -100,9 +137,73 @@
             </div>
         </article>
     </section>
-    <section class="cartas" >
+    <section class="preguntas-frecuentes">
+        <article class="preguntas-f">
+            <div class="faq-section">
+                <h2>Preguntas Frecuentes </h2>
 
-        <article class="cartas-contenido">
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué tipo de páginas web diseñas? <span class="faq-icon">+</span></button>
+                    <div class="faq-answer">
+                        <p>Diseño webs personalizadas para marcas, emprendedores y creativos. Desde portfolios visuales hasta sitios funcionales con blog, tienda o integración multimedia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué significa “estética cinematográfica” en una web? <span class="faq-icon">+</span></button>
+
+                    <div class="faq-answer">
+                        <p>Tu web no solo informa: emociona. Uso ritmo visual, transiciones suaves, tipografía con intención y estructura narrativa para que cada visitante viva una experiencia.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Qué tecnologías usas? <span class="faq-icon">+</span></button>
+
+                    <div class="faq-answer">
+                        <p>HTML, CSS, JavaScript, WordPress, Figma, Adobe XD. También implemento soluciones modulares para escalabilidad y mantenimiento fácil.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Mi web será responsive? <span class="faq-icon">+</span></button>
+
+                    <div class="faq-answer">
+                        <p>Sí. Todas las webs se adaptan a móviles, tablets y pantallas grandes. La experiencia debe ser fluida sin importar el dispositivo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Puedo actualizar mi web después? <span class="faq-icon">+</span></button>
+
+                    <div class="faq-answer">
+                        <p>Claro. Te entrego una estructura modular que puedes actualizar tú mismo o con mi soporte. También ofrezco mantenimiento si lo necesitas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Cuánto tarda el proceso? <span class="faq-icon">+</span></button>
+
+                    <div class="faq-answer">
+                        <p>Depende del proyecto, pero en promedio entre 2 y 4 semanas. Si necesitas algo urgente, podemos adaptarlo.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">¿Cómo empezamos? <span class="faq-icon">+</span></button>
+
+                    <div class="faq-answer">
+                        <p>Escríbeme desde el formulario de contacto o por WhatsApp. Agendamos una reunión breve, definimos tus necesidades y te presento una propuesta clara.</p>
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+
+
+    <section class="section-blog">
+        <article class="cartas-entradas">
             <div class="contenedor-cartas">
                 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                         <div class="carta-entrada">
@@ -123,8 +224,6 @@
                 endif; ?>
             </div>
         </article>
-    </section>
-    <section class="section-blog">
         <article class="blog">
             <div class="blog-contenido">
                 <div class="cartas-blog">
